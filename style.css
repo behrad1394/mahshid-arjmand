@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "HeadingNow", sans-serif;
+}
+
+.home {
+  
+  min-height: 100vh;
+  padding: 105px 12px 30px;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.08)),
+    url("images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.identity {
+  font-family: "HeadingNow", sans-serif;
+  color: 
+  #ffffff;
+  text-align: left;
+  margin-left: 300px;
+  margin-top: 125px;
+}
+
+.identity h1 {
+  direction: rtl;
+  text-align: left;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.english-name {
+  direction: ltr;
+  text-align: left;
+  font-size: clamp(23px, 4vw, 34px);
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.menu {
+  font-family: "HeadingNow", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 500;
+
+    margin-left: 300px;
+    margin-top: 50px;
+
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "HeadingNow";
+  src: url("heading_now/HeadingNow.woff2") format("woff2");
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding-top: 65px;
+    background-position: center;
+  }
+
+  .identity h1 {
+    font-size: 23px;
+  }
+
+  .menu a {
+    font-size: 22px;
+  }
+}
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 0.2s ease;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 0.3s ease;
+}
+
+@keyframes fade-out {
+  to {
+      opacity: 0;
+      transform: translateX(-10px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateX(10px);
+  }
+}
