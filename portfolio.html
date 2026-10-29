@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+.painting-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.painting-img {
+    width: 200px;  /* عرض مربع */
+    height: 200px; /* ارتفاع مربع */
+    object-fit: cover; /* برای اینکه عکس دفرمه نشود و درست داخل کادر بنشیند */
+    border: 4px solid #000; /* کادر مشکی دور عکس */
+    border-radius: 8px; /* گوشه‌های گرد (اختیاری) */
+}
+
+.about-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
 
   <div class="painting-card">
     <!-- خودِ تگ عکس که هم کادر است و هم عکس را نشان می‌دهد -->
