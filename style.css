@@ -73,6 +73,11 @@ body {
 }
 .tt{    margin-left: 300px;
   margin-top: 300px;}
+
+.conectrr {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "HeadingNow";
   src: url("heading_now/HeadingNow.woff2") format("woff2");
