@@ -97,6 +97,17 @@ body {
     font-size: 22px;
   }
 }
+.parent-box {
+    position: relative; /* خیلی مهم: باعث میشه دکمه موقعیتش رو نسبت به این باکس تنظیم کنه نه کل صفحه مانیتور */
+    height: 100vh;      /* ارتفاع باکس (مثلا کل ارتفاع صفحه) */
+}
+
+.my-button {
+    position: absolute;
+    bottom: 20px;  /* فاصله از پایین صفحه */
+    left: 20px;    /* فاصله از چپ صفحه */
+}
+
 @view-transition {
   navigation: auto;
 }
